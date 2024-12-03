@@ -14,6 +14,7 @@ const AppContent = () => {
   const location = useLocation();
   const { isLoaded, isSignedIn } = useUser();
   const showFooter = location.pathname !== '/roadmap';
+  const showHeader = location.pathname !== '/roadmap';
 
   // Show loading state while checking auth
   if (!isLoaded) {
@@ -39,7 +40,7 @@ const AppContent = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-neutral-950">
-      <Header />
+      {showHeader && <Header />}
       <main className="flex-grow">
         <Routes>
           <Route path="/" element={<BrightPathAI />} />
