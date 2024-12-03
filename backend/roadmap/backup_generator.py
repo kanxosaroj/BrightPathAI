@@ -16,11 +16,11 @@ class BackupModelGenerator:
         # Define allowed tech fields
         self.tech_fields = {
     # Programming Languages
-    'programming', 'python', 'javascript', 'java', 'c++', 'c#', 'ruby', 'php', 'swift', 'kotlin', 'rust', 'go',
+    'programming', 'python', 'javascript', 'java', 'c++', 'c#', 'ruby', 'php', 'swift', 'kotlin', 'rust', 'go','mongoDB',
     
     # Web Development
     'web development', 'frontend', 'backend', 'fullstack', 'html', 'css', 'react', 'angular', 'vue', 'node.js',
-    'django', 'flask', 'spring boot', 'asp.net', 'web design', 'responsive design',
+    'django', 'flask', 'spring boot', 'asp.net', 'web design', 'responsive design','full stack development',
     
     # Data Related
     'data', 'data science', 'data engineering', 'data analyst', 'data analytics', 'business analyst', 'business intelligence',
@@ -29,7 +29,7 @@ class BackupModelGenerator:
     
     # AI/ML
     'machine learning', 'artificial intelligence', 'ai', 'deep learning', 'nlp', 'computer vision',
-    'neural networks', 'tensorflow', 'pytorch', 'scikit-learn', 'ml ops',
+    'neural networks', 'tensorflow', 'pytorch', 'scikit-learn', 'ml ops',''
     
     # Cloud & DevOps
     'devops', 'cloud computing', 'aws', 'azure', 'gcp', 'docker', 'kubernetes', 'jenkins', 'ci/cd',
@@ -53,9 +53,10 @@ class BackupModelGenerator:
     'technical lead', 'tech lead', 'engineering manager',
     'networking', 'network engineer', 'system administrator',
     'linux', 'unix', 'windows server', 'shell scripting',
-    'api', 'rest api', 'graphql', 'microservices', 'distributed systems'
-}
-
+    'api', 'rest api', 'graphql', 'microservices', 'distributed systems',
+    'security', 'cybersecurity', 'ethical hacking', 'penetration testing', 'pen testing', 'network security',
+ }
+ 
     def is_tech_related(self, prompt):
         """Check if the prompt is related to technology field"""
         # First check with our predefined tech fields
